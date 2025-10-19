@@ -1,0 +1,9 @@
+# Ignorar archivos compilados
+bin/
+*.class
+*.jar
+*.log
+
+# Archivos temporales de VS Code
+.vscode/
+*.tmp
