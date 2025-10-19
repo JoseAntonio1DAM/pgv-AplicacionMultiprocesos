@@ -23,7 +23,11 @@ public class Analizador {
         List<String> positivas = Arrays.asList("excelente", "bueno", "recomendado", "fantástico", "genial");
         List<String> negativas = Arrays.asList("malo", "defectuoso", "caro", "horrible", "pésimo");
 
-        int pos = 0, neg = 0, neut = 0, total = 0;
+        int pos = 0,
+
+                neg = 0,
+                neut = 0,
+                total = 0;
 
         try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
             String linea;
@@ -46,7 +50,6 @@ public class Analizador {
             System.out.printf("Porcentaje positivo: %.2f%%\n", (pos * 100.0) / total);
 
         } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
