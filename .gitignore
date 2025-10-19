@@ -1,9 +1,21 @@
-# Ignorar archivos compilados
+# =========================================================
+# ARCHIVOS Y CARPETAS QUE NO DEBEN SUBIRSE AL REPOSITORIO
+# =========================================================
+
+# === COMPILADOS DE JAVA ===
 bin/
+out/
+target/
 *.class
 *.jar
-*.log
+*.war
+*.ear
 
-# Archivos temporales de VS Code
+# === CONFIGURACIÓN LOCAL DE IDEs ===
+# VS Code
 .vscode/
-*.tmp
+.classpath
+.project
+.settings/
+launch.json
+tasks.json

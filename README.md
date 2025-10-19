@@ -1,18 +1,56 @@
-## Getting Started
+## Proyecto: Analizador Multiproceso de Reseñas de Clientes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descripción general
 
-## Folder Structure
+Esta aplicación en Java analiza reseñas de productos de forma paralela utilizando procesos independientes.
+El objetivo es evaluar la satisfacción de los clientes mediante la detección de reseñas positivas, negativas o neutras, mejorando así la toma de decisiones en la empresa.
 
-The workspace contains two folders by default, where:
+## Justificación empresarial
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Una empresa de comercio electrónico recibe a diario miles de reseñas de clientes sobre sus productos.
+Revisar cada comentario manualmente sería lento e ineficiente.
+Gracias a esta aplicación multiproceso, se pueden analizar simultáneamente varios ficheros de reseñas (uno por producto o por día), permitiendo conocer rápidamente:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+El porcentaje de opiniones positivas por producto.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+El nivel de satisfacción global de los clientes.
 
-## Dependency Management
+Qué productos necesitan mejoras o atención especial.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Con esto, la empresa puede detectar problemas más rápido y mejorar su reputación online.
+
+## Funcionamiento técnico
+
+## Proceso principal (Main.java)
+
+Busca ficheros en la carpeta /reseñas.
+
+Crea un subproceso por cada archivo, utilizando ProcessBuilder.
+
+Cada subproceso ejecuta Analizador.java con el nombre del archivo como argumento.
+
+Redirige la salida de cada subproceso a un fichero en /salidas.
+
+Espera que todos los subprocesos terminen y luego resume los resultados globales en consola.
+
+## Subproceso (Analizador.java)
+
+Recibe el nombre de un archivo de reseñas.
+
+Clasifica las reseñas según palabras clave:
+
+Positivas: “excelente”, “bueno”, “recomendado”, “fantástico”, “genial”.
+
+Negativas: “malo”, “defectuoso”, “caro”, “horrible”, “pésimo”.
+
+Calcula estadísticas (totales y porcentajes).
+
+Imprime los resultados (redirigidos por el proceso principal a un fichero de salida).
+
+## Ejecución paso a paso
+
+Compilar
+javac Main.java Analizador.java
+
+Ejecutar
+java Main
