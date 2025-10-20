@@ -50,7 +50,6 @@ public class Analizador {
             System.out.printf("Porcentaje positivo: %.2f%%\n", (pos * 100.0) / total);
 
         } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
