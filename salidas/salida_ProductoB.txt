@@ -1,0 +1,6 @@
+Archivo: ProductoB.txt
+Total: 3
+Positivas: 0
+Negativas: 0
+Neutras: 3
+Porcentaje positivo: 0,00%

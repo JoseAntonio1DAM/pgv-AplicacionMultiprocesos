@@ -1,0 +1,6 @@
+Archivo: ProductoA.txt
+Total: 3
+Positivas: 1
+Negativas: 0
+Neutras: 2
+Porcentaje positivo: 33,33%

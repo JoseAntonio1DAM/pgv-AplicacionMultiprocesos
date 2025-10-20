@@ -57,4 +57,14 @@ java -cp bin App
 
 ![En una carpeta llamada reseñas están las reseñas creadas por clientes](assets/imagenUno.PNG)
 
-#
+# Estructura de archivos
+
+![Estructura de paquetes](assets/Captura.PNG)
+
+# Ejecucion del programa principal
+
+![Ejecucion del App.java](assets/imagen4.PNG)
+
+# Resultados
+
+![Vemos la salida por consola y lo que se genera y donde: ](assets/imagen5.PNG)
