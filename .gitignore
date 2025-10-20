@@ -4,7 +4,7 @@
 
 # === COMPILADOS DE JAVA ===
 *.class
-/bin/
+bin
 
 # === CONFIGURACIÓN LOCAL DE IDEs ===
 # VS Code
