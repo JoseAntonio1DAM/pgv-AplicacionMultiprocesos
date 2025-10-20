@@ -1,0 +1,11 @@
+# =========================================================
+# ARCHIVOS Y CARPETAS QUE NO DEBEN SUBIRSE AL REPOSITORIO
+# =========================================================
+
+# === COMPILADOS DE JAVA ===
+*.class
+bin
+
+# === CONFIGURACIÓN LOCAL DE IDEs ===
+# VS Code
+.vscode/
