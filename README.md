@@ -49,8 +49,12 @@ Imprime los resultados (redirigidos por el proceso principal a un fichero de sal
 
 ## Ejecución paso a paso
 
-Compilar
-javac Main.java Analizador.java
+# Ejecutar
 
-Ejecutar
-java Main
+java -cp bin App
+
+## FUNCIONAMIENTO DE LA APLICACIÓN:
+
+![En una carpeta llamada reseñas están las reseñas creadas por clientes](assets/imagenUno.PNG)
+
+#
