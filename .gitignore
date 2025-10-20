@@ -3,19 +3,11 @@
 # =========================================================
 
 # === COMPILADOS DE JAVA ===
-bin/
-out/
-target/
+/bin/
 *.class
 *.jar
 *.war
 *.ear
-
 # === CONFIGURACIÓN LOCAL DE IDEs ===
 # VS Code
 .vscode/
-.classpath
-.project
-.settings/
-launch.json
-tasks.json
