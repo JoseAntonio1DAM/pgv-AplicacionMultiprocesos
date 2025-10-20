@@ -1,0 +1,3 @@
+María;3;Producto normal, cumple pero no destaca.
+Andrés;1;Llegó defectuoso, mala experiencia.
+Sofía;5;Excelente, justo lo que necesitaba y muy resistente.

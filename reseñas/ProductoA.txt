@@ -1,0 +1,3 @@
+Ana;5;Excelente calidad, funciona perfectamente y llegó a tiempo.
+Luis;4;Muy buen producto, aunque el empaque podría mejorar.
+Carmen;3;Cumple su función pero esperaba un mejor acabado.
