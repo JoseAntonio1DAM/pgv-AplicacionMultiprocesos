@@ -29,7 +29,7 @@ public class App {
 
                 // Construir el subproceso (Analizador)
                 ProcessBuilder pb = new ProcessBuilder(
-                        "java", "Analizador", archivo.getPath());
+                        "java", "-cp", "bin", "net.salesianos.procesos.Analizador", archivo.getPath());
                 pb.redirectOutput(salida);
                 pb.redirectError(ProcessBuilder.Redirect.INHERIT);
 
